@@ -1,17 +1,16 @@
-//Segundo programa en C++ tipos de datos básicos
+//Tercer programa en C++ Lectura o entrada de datos
 
 #include <iostream> //libreria para entrada y salida de datos
 
 using namespace std;
 
 int main() {
+    float numero;
 
-    int entero = 15;  //entero
-    float flotante = 10.45; //flotante solo dos decimales
-    double mayor = 16.3456; //flotante pero con mas decimales
-    char letra = 'a';//caracter
+    cout<<"Digite un numero: "; 
+    cin>>numero; //intruccion para entrar datos
 
-    cout<<mayor; //imprimir variables
+    cout<<"\nE1 numero que digito es: "<<numero;
 
     return 0;
 }
