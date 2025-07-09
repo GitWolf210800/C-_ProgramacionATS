@@ -1,16 +1,15 @@
-//Tercer programa en C++ Lectura o entrada de datos
+/*
+Cuarto programa Escribir un programa que lea de la entrada estandar 
+dos número y muestre en la salida estándar 
+su suma, resta, multiplicación y división
+*/
 
 #include <iostream> //libreria para entrada y salida de datos
 
 using namespace std;
 
 int main() {
-    float numero;
-
-    cout<<"Digite un numero: "; 
-    cin>>numero; //intruccion para entrar datos
-
-    cout<<"\nE1 numero que digito es: "<<numero;
+    int n1, n2, suma = 0;
 
     return 0;
 }
