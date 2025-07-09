@@ -1,10 +1,11 @@
 /*
-Cuarto programa Escribir un programa que lea de la entrada estandar 
-dos número y muestre en la salida estándar 
-su suma, resta, multiplicación y división
-*EJERCIOCIO!!!!
-Escribe un programa que lea de la entrada estándar el precio de un producto y
-muestre en la salida estándar el precio del producto al aplicarle el IVA
+Tercer programa Escribir un programa que lea de la entrada estandar 
+de los siguientes datos de una persona:
+    Edad: dato tipo entero.
+    Sexo: dato tipo carácter.
+    Altura en metros: dato tipo real.
+Tras Leer los datos, el programa debe mostrarlos en la salida estándar.
+
 */
 
 #include <iostream> //libreria para entrada y salida de datos
@@ -12,15 +13,18 @@ muestre en la salida estándar el precio del producto al aplicarle el IVA
 using namespace std;
 
 int main() {
-    int precio, multiplicacion = 0, iva = 0, precio_final;
+    int edad;
+    char sexo[10];
+    float altura;
 
-    cout<<"Digite el precio: "; cin>>precio;
-    //cout<<"Digite otro numero: "; cin>>n2;
+    cout<<"Digite su edad: "; cin>>edad;
+    cout<<"Digite su Sexo: "; cin>>sexo;
+    cout<<"Digite su altura en metros: "; cin>>altura;
 
-    iva = (precio * 25)/100; //aplicando el 25%
-    precio_final = precio + iva;
+    cout<<"\nEdad: "<<edad<<endl;
+    cout<<"Sexo: "<<sexo<<endl;
+    cout<<"Altura en metros: "<<altura<<endl;
 
-    cout<<"\n el precio Final con el IVA es: "<<precio_final<<endl;
 
     return 0;
 }
