@@ -1,10 +1,5 @@
 /*
-Tercer programa Escribir un programa que lea de la entrada estandar 
-de los siguientes datos de una persona:
-    Edad: dato tipo entero.
-    Sexo: dato tipo carácter.
-    Altura en metros: dato tipo real.
-Tras Leer los datos, el programa debe mostrarlos en la salida estándar.
+sexto programa Escribir una expresión matemática en C++
 
 */
 
@@ -13,18 +8,17 @@ Tras Leer los datos, el programa debe mostrarlos en la salida estándar.
 using namespace std;
 
 int main() {
-    int edad;
-    char sexo[10];
-    float altura;
+    float a,b,c,d, resultado = 0;
 
-    cout<<"Digite su edad: "; cin>>edad;
-    cout<<"Digite su Sexo: "; cin>>sexo;
-    cout<<"Digite su altura en metros: "; cin>>altura;
+    cout<<"Digite el valor de a: "; cin>>a;
+    cout<<"Digite el valor de b: "; cin>>b;
+    cout<<"Digite el valor de c: "; cin>>c;
+    cout<<"Digite el valor de d: "; cin>>d;
 
-    cout<<"\nEdad: "<<edad<<endl;
-    cout<<"Sexo: "<<sexo<<endl;
-    cout<<"Altura en metros: "<<altura<<endl;
+    resultado = (a+b) / (c+d);
 
+    cout.precision(2);
+    cout<<"\n El resultado es: "<<resultado<<endl;
 
     return 0;
 }
