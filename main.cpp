@@ -2,6 +2,9 @@
 Cuarto programa Escribir un programa que lea de la entrada estandar 
 dos número y muestre en la salida estándar 
 su suma, resta, multiplicación y división
+*EJERCIOCIO!!!!
+Escribe un programa que lea de la entrada estándar el precio de un producto y
+muestre en la salida estándar el precio del producto al aplicarle el IVA
 */
 
 #include <iostream> //libreria para entrada y salida de datos
