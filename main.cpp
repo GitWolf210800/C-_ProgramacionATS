@@ -9,18 +9,13 @@ su suma, resta, multiplicación y división
 using namespace std;
 
 int main() {
-    float a, b, c, d, e, f, resultado = 0;
+    int x, y, aux;
+    cout << "Digite el valor de x: "; cin >> x;
+    cout << "Digite el valor de y: "; cin >> y;
 
-    cout << "Digite el Valor de a"; cin >> a;
-    cout << "Digite el Valor de b"; cin >> b;
-    cout << "Digite el Valor de c"; cin >> c;
-    cout << "Digite el Valor de d"; cin >> d;
-    cout << "Digite el Valor de e"; cin >> e;
-    cout << "Digite el Valor de f"; cin >> f;
+    aux = x;
+    x = y;
 
-    resultado = (a + b / c) / (d + e /f);
-
-    cout << "\n el resultado es: " << resultado << endl;
-
-    return 0;
+    cout<<"\nEl nuevo valor de x es: "<<x<<endl;
+    cout<<"El nuevo valor de y es:"<<y<<endl;
 }
