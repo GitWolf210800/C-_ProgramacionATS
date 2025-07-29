@@ -1,10 +1,7 @@
 /*
-Cuarto programa Escribir un programa que lea de la entrada estandar 
-dos número y muestre en la salida estándar 
-su suma, resta, multiplicación y división
-
-Ejercicio 6:
-Escriba un programa que lea la nota final de cuatro alumnos y calcule l nota final de media de los cuatros alumnos
+La calificacion final de un estidiante es la media ponderada de tres nota:
+La nota de prácticas que cuenta un 30% del total, la nota teórica que cuenta un 60% y la nota de participación que cuenta el 10% restante. 
+    Escriba un programa que lea la entrada estándar, las tres notas de un alumno y escriba la salida estándar si nota final.
 */
 
 #include <iostream> //libreria para entrada y salida de datos
@@ -12,13 +9,19 @@ Escriba un programa que lea la nota final de cuatro alumnos y calcule l nota fin
 using namespace std;
 
 int main() {
-    int a, b, c, d, promedio = 0;
-    cout << "Digite la nota del alumno a: "; cin >> a;
-    cout << "Digite la nota del alumno b: "; cin >> b;
-    cout << "Digite la nota del alumno c: "; cin >> c;
-    cout << "Digite la nota del alumno d: "; cin >> d;
+    float practica, teorica, participacion, nota_final;
 
-    promedio = (a + b + c + d) / 4;
+    cout << "Digite la nota de practica: "; cin >> practica;
+    cout << "Digite la nota de teorica: "; cin >> teorica;
+    cout << "Digite la nota de participacion: "; cin >> participacion;
 
-    cout<<"\nEl nuevo valor del promedio de notas es: "<<promedio<<endl;
+    practica *= 0.30;
+    teorica *= 0.60;
+    participacion *= 0.10;
+
+    nota_final = practica + teorica + participacion;
+
+    cout << "\nLa nota final es: " <<nota_final;
+
+    return 0;
 }
